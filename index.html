@@ -3,74 +3,146 @@
   <head>
     <meta charset="utf-8" />
     <title>GO Lee</title>
+
+    <!-- Google Fonts -->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Stylesheets -->
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Font Awesome -->
+
+    <script
+      src="https://kit.fontawesome.com/8d771c5d5a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap Scripts -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <table cellspacing="20">
-      <tr>
-        <td><img height="200px" src="golee.png" alt="GO's CARICATURE" /></td>
-        <td>
-          <h1>GO Lee</h1>
-          <p>
-            PR of
-            <em
-              ><strong><a href="https://xxit.world/">XXIT</a></strong></em
-            >
-          </p>
-          <p>I am a developer using JS, Python and more</p>
-        </td>
-      </tr>
-    </table>
+    <section id="title">
+      <div id="title-navbar">
+        <!-- Nav Bar -->
 
-    <hr />
-    <h3>Books and Teaching</h3>
-    <ul>
-      <li>AAA</li>
-      <li>Hackers</li>
-    </ul>
-    <hr>
-    <h3>Work Experience</h3>
-    <table>
-      <thead>
-        <th>Dates</th>
-        <th>Work</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>2019</td>
-          <td>Researcher</td>
-        </tr>
-        <tr>
-          <td>2016</td>
-          <td>Teaching Assistant</td>
-        </tr>
-      </tbody>
-    </table>
-    <hr>
-    <h3>Skills</h3>
-    <table cellspacing="5">
+        <nav class="navbar navbar-expand-lg navbar-primary">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-          <table>
-            <tr>
-              <td>HTML</td>
-              <td>🔥🔥🔥🔥🔥</td>
-            </tr>
-            <tr>
-              <td>CSS</td>
-              <td>🔥🔥🔥🔥🔥</td>
-            </tr>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Download CV</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
-            <tr>
-              <td>JavaScript</td>
-              <td>🔥🔥🔥</td>
-            </tr>
-            <tr>
-              <td>Python</td>
-              <td>🔥🔥</td>
-            </tr>
-    </table>
-    <hr />
-    <a href="hobbies.html">My Hobbies<br /></a>
-    <a href="contacts.html">Contact Me</a>
+        <!-- Title -->
+
+        <div class="container-fluid">
+          <div id="title-hedaer">
+            <p class="header-greeting">
+              Hello!
+              <img
+                class="waving-hand-image"
+                src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/waving-hand-sign_1f44b.png"
+                alt="waving-hand-image"
+              />
+            </p>
+            <p class="header-greeting">
+              I'm <span class="golee">GO Lee</span>, a full-stack developer
+              focused on building great interfaces & experiences
+              <img
+                class="technologist-image"
+                src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/technologist-light-skin-tone_1f9d1-1f3fb-200d-1f4bb.png"
+                alt="technologist-image"
+              />
+            </p>
+          </div>
+          <div id="title-email">
+            <p id="get-in-touch">
+              Get in touch
+              <img
+                class="pointing-right-image"
+                src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/white-right-pointing-backhand-index_1f449.png"
+                alt="pointing-right-image"
+              />
+            </p>
+            <button type="button" id="fill-email">
+              <a
+                id="golee-email"
+                href="mailto:golee.dev@gmail.com"
+                target="_blank"
+                >golee.dev@gmail.com</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container-fluid">
+        <i class="social-icon fab fa-github"></i>
+        <i class="social-icon fab fa-instagram"></i>
+        <i class="social-icon fas fa-envelope"></i>
+        <p>
+          © Copyright 2020
+          <img
+            class="robot-image"
+            src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/robot-face_1f916.png"
+            alt="robot-image"
+          />
+          GO Lee
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
