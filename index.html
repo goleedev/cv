@@ -51,42 +51,31 @@
     <section id="title">
       <div id="title-navbar">
         <!-- Nav Bar -->
-
-        <nav class="navbar navbar-expand-lg navbar-primary">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Download CV</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+       
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="btn btn-outline-primary nav-link" href="#">Download CV</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
       </div>
 
         <!-- Title -->
 
-        <div class="container-fluid">
           <div id="title-hedaer">
             <p class="header-greeting">
               Hello!
@@ -105,29 +94,55 @@
                 alt="technologist-image"
               />
             </p>
-          </div>
-          <div id="title-email">
             <p id="get-in-touch">
-              Get in touch
-              <img
-                class="pointing-right-image"
-                src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/white-right-pointing-backhand-index_1f449.png"
-                alt="pointing-right-image"
-              />
-            </p>
-            <button type="button" id="fill-email">
-              <a
-                id="golee-email"
-                href="mailto:golee.dev@gmail.com"
-                target="_blank"
-                >golee.dev@gmail.com</a
-              >
-            </button>
+                Get in touch
+                <img
+                  class="pointing-right-image"
+                  src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/white-right-pointing-backhand-index_1f449.png"
+                  alt="pointing-right-image"
+                />
+              </p>
+              <button type="button" id="fill-email">
+                <a
+                  id="golee-email"
+                  href="mailto:golee.dev@gmail.com"
+                  target="_blank"
+                  >golee.dev@gmail.com</a
+                >
+              </button>
           </div>
+        </div>
+
+    </section>
+
+    <!-- Skills Section -->
+
+    <section id="skills">
+      <div class="container-fluid row">
+        <div class="section-title col-lg-2">
+          <p>SKILLS</p> 
+        </div>
+        <div class="section-content col-lg-5 col-sm-6">
+          <p class="section-content-title">LANGUAGES</p>
+          <ul class="section-content-list">
+            <li>JavaScript (ES6)</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Python</li>
+          </ul>
+        </div>
+        <div class="section-content col-lg-5 col-sm-6">
+          <p class="section-content-title">FRAMEWORKS & TOOLS</p>
+          <ul class="section-content-list">
+              <li>React</li>
+              <li>Node</li>
+              <li>Git & Github</li>
+            </ul>
         </div>
       </div>
     </section>
 
+    <!-- Footer  -->
     <footer id="footer">
       <div class="container-fluid">
         <i class="social-icon fab fa-github"></i>
@@ -143,6 +158,7 @@
           GO Lee
         </p>
       </div>
+      <div id="footer-pointing"><a href="#"><img class="pointing-up" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/white-up-pointing-index_261d.png" alt="poiting-up-image"></a></div>
     </footer>
   </body>
 </html>

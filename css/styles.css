@@ -4,14 +4,40 @@ body {
   text-align: center;
   font-weight: 300;
   color: #444452;
-  background-color: #fff;
   letter-spacing: 2px;
+}
+
+/* Section Contents */
+
+.section-title {
+  font-weight: 600;
+  color: #007dff;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.section-content-title {
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.section-content {
+  padding: 0 3rem;
+  line-height: 1.5;
+}
+
+.section-content-list {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
 /* Container */
 
 .container-fluid {
-  padding: 15% 35% 15% 20%;
+  padding: 5% 25% 10% 20%;
   text-align: left;
 }
 
@@ -19,20 +45,31 @@ body {
 
 .navbar {
   padding: 0 0 4.5rem;
-  position: absolute;
-  right: 20px;
+  float: right;
+  margin: none;
 }
 
 .nav-item {
   padding: 2rem 1rem;
 }
 
-.nav-link {
-  font-size: 1rem;
-  font-weight: 300;
+.nav-link:hover {
+  border-bottom: 1px #007dff solid;
+  margin-top: 2px;
+}
+
+.navbar-toggler {
+  border: none;
+  width: 3rem;
+  display: inline-block;
 }
 
 /* Header Section */
+
+#title-hedaer {
+  padding: 15% 35% 15% 20%;
+  text-align: left;
+}
 
 .header-greeting {
   font-size: 2.5rem;
@@ -48,6 +85,23 @@ body {
   width: 2.5rem;
   height: auto;
   margin: 0 0 20px 5px;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-name: waving-hand;
+}
+
+@keyframes waving-hand {
+  0% {
+    transform: rotate(-15deg);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .technologist-image {
@@ -112,10 +166,15 @@ button {
   top: 0;
 }
 /* Skills Section */
+#skills .container-fluid {
+  padding: 7% 10% 7% 20%;
+}
 
 /* Project Section */
 
 /* Footer Section */
+#footer {
+}
 
 .social-icon {
   margin: 20px 10px;
@@ -125,4 +184,17 @@ button {
   width: 3%;
   height: auto;
   margin-bottom: 0.5%;
+}
+
+.pointing-up {
+  width: 2.5rem;
+  height: auto;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.pointing-up:hover {
+  margin-bottom: 5px;
+  transition: 0.1 ease-in-out;
 }
