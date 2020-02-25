@@ -7,33 +7,6 @@ body {
   letter-spacing: 2px;
 }
 
-/* Section Contents */
-
-.section-title {
-  font-weight: 600;
-  color: #007dff;
-  margin: 0;
-  padding: 0;
-  text-align: right;
-}
-
-.section-content-title {
-  font-weight: 600;
-  margin-bottom: 2rem;
-}
-
-.section-content {
-  padding: 0 3rem;
-  line-height: 1.5;
-}
-
-.section-content-list {
-  list-style-type: none;
-  text-align: left;
-  margin: 0;
-  padding: 0;
-}
-
 /* Container */
 
 .container-fluid {
@@ -66,17 +39,17 @@ body {
 
 /* Header Section */
 
-.header-greeting {
+#title-hedaer .header-greeting {
   font-size: 2.5rem;
   line-height: 1.5;
   margin-bottom: 6rem;
 }
 
-.golee {
+#title-hedaer .golee {
   font-weight: 600;
 }
 
-.waving-hand-image {
+#title-hedaer .waving-hand-image {
   width: 2.5rem;
   height: auto;
   margin: 0 0 20px 5px;
@@ -99,7 +72,7 @@ body {
   }
 }
 
-.technologist-image {
+#title-hedaer .technologist-image {
   width: 2.5rem;
   height: auto;
   margin: 0 0 20px 5px;
@@ -108,19 +81,20 @@ body {
 #get-in-touch {
   font-size: 1.4rem;
   float: left;
+  margin: 0;
 }
 
-.pointing-right-image {
+#get-in-touch .pointing-right-image {
   width: 2rem;
   height: auto;
-  padding: 0 0 10px 0;
+  padding-bottom: 5px;
+  margin-right: 10px;
 }
 
-button {
+#fill-email {
   position: relative;
-  margin: 0 7px;
-  padding: 0 5px;
   border: none;
+  padding: 0;
   background-color: #fff;
   border-bottom: 3px #007dff solid;
   outline: 0;
@@ -138,7 +112,7 @@ button {
   text-decoration: none;
   font-weight: 400;
   font-size: 1.4rem;
-  letter-spacing: 2.5px;
+  padding: 0 5px;
 }
 
 #golee-email:hover {
@@ -160,10 +134,36 @@ button {
 #golee-email:hover:before {
   top: 0;
 }
+
 /* Skills Section */
 #skills .container-fluid {
   padding: 5% 25% 10% 20%;
   text-align: left;
+}
+
+#skills .section-title {
+  font-weight: 600;
+  color: #007dff;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+#skills .section-content-title {
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+#skills .section-content {
+  padding: 0 3rem;
+  line-height: 1.5;
+}
+
+#skills .section-content-list {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
 /* Project Section */
@@ -182,7 +182,7 @@ button {
   margin-bottom: 0.5%;
 }
 
-.pointing-up {
+#footer-pointing .pointing-up {
   width: 2.5rem;
   height: auto;
   position: fixed;
@@ -190,7 +190,7 @@ button {
   right: 2rem;
 }
 
-.pointing-up:hover {
+#footer-pointing .pointing-up:hover {
   margin-bottom: 5px;
   transition: 0.1 ease-in-out;
 }
