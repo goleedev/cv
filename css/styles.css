@@ -94,6 +94,8 @@ body {
 #fill-email {
   border: none;
   padding: 0 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   background: transparent;
 }
