@@ -39,17 +39,17 @@ body {
 
 /* Header Section */
 
-#title-hedaer .header-greeting {
+.header-greeting {
   font-size: 2.5rem;
   line-height: 1.5;
   margin-bottom: 6rem;
 }
 
-#title-hedaer .golee {
+.golee {
   font-weight: 600;
 }
 
-#title-hedaer .waving-hand-image {
+.waving-hand-image {
   width: 2.5rem;
   height: auto;
   margin: 0 0 20px 5px;
@@ -72,7 +72,7 @@ body {
   }
 }
 
-#title-hedaer .technologist-image {
+.technologist-image {
   width: 2.5rem;
   height: auto;
   margin: 0 0 20px 5px;
@@ -84,7 +84,7 @@ body {
   margin: 0;
 }
 
-#get-in-touch .pointing-right-image {
+.pointing-right-image {
   width: 2rem;
   height: auto;
   padding-bottom: 5px;
@@ -92,56 +92,41 @@ body {
 }
 
 #fill-email {
-  position: relative;
   border: none;
-  padding: 0;
-  background-color: #fff;
-  border-bottom: 3px #007dff solid;
-  outline: 0;
-  overflow: visible;
-  z-index: 1;
-  transition: 0.09s ease-in-out;
-  -o-transition: 0.09s ease-in-out;
-  -ms-transition: 0.09s ease-in-out;
-  -moz-transition: 0.09s ease-in-out;
-  -webkit-transition: 0.09s ease-in-out;
+  padding: 0 5px;
 }
 
 #golee-email {
   color: #383736;
   text-decoration: none;
+  border-bottom: 3px #007dff solid;
   font-weight: 400;
   font-size: 1.4rem;
   padding: 0 5px;
+  box-shadow: inset 0px 0px 0px #007dff;
+  transition: all 0.5s !important;
 }
 
 #golee-email:hover {
   color: #fff;
+  box-shadow: inset 0px -80px 0px #007dff;
 }
 
-#golee-email:before {
-  content: "";
-  position: absolute;
-  background-color: #007dff;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 100%;
-  z-index: -1;
-  -webkit-transition: top 0.09s ease-in-out;
-}
+/* Background Section */
 
-#golee-email:hover:before {
-  top: 0;
+#background .container-fluid {
+  padding: 5% 25% 10% 20%;
+  text-align: left;
 }
 
 /* Skills Section */
+
 #skills .container-fluid {
   padding: 5% 25% 10% 20%;
   text-align: left;
 }
 
-#skills .section-title {
+.section-title {
   font-weight: 600;
   color: #007dff;
   margin: 0;
@@ -149,24 +134,29 @@ body {
   text-align: right;
 }
 
-#skills .section-content-title {
+.section-content-title {
   font-weight: 600;
   margin-bottom: 2rem;
 }
 
-#skills .section-content {
+.section-content {
   padding: 0 3rem;
   line-height: 1.5;
 }
 
-#skills .section-content-list {
+.section-content-list {
   list-style-type: none;
   text-align: left;
   margin: 0;
   padding: 0;
 }
 
-/* Project Section */
+/* Projects Section */
+
+#projects .container-fluid {
+  padding: 5% 25% 10% 20%;
+  text-align: left;
+}
 
 /* Footer Section */
 #footer {
@@ -177,7 +167,7 @@ body {
 }
 
 .robot-image {
-  width: 3%;
+  width: 2rem;
   height: auto;
   margin-bottom: 0.5%;
 }
