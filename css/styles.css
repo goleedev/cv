@@ -94,6 +94,8 @@ body {
 #fill-email {
   border: none;
   padding: 0 5px;
+  appearance: none;
+  background: transparent;
 }
 
 #golee-email {
