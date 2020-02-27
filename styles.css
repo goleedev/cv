@@ -37,6 +37,10 @@ body {
   display: inline-block;
 }
 
+#dowonload-cv:hover {
+  color: #fff;
+}
+
 /* Header Section */
 
 .header-greeting {
